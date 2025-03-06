@@ -90,7 +90,7 @@ async function handle_request_api() {
 
             // Get the value of Dollar Quotation
             upDown = body_response["EURBRL"]["varBid"];
-            dollarQuotation = body_response["EURBRL"]["bid"];
+            dollarQuotation = body_response["EURBRL"]["low"];
             dollarQuotation = dollarQuotation.split(".");
             dollarQuotation = dollarQuotation[0] + "." + dollarQuotation[1].substring(0, 2);
 
